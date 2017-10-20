@@ -14,7 +14,7 @@
 
 3) Unit tests
 
-Technical Requirements:
+### Technical Requirements:
 - All data must be save to a database
 - All requests/responses, except for file upload requests, must be in the form of JSON
 - The REST service should use HTTPS
