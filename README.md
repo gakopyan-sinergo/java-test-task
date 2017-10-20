@@ -1,15 +1,18 @@
 # java-test-task
 
+## Create a HTTP REST API with the following functionality:
 
-Create a HTTP REST API with the following functionality:
+1) A simple CRUD(Create Read Update Delete) REST JSON service for accounts under the route "/accounts". Important: the accounts must have a unique integer id for getting accountDetails in point "2" of the required task.
 
-1) There should be some kind of authentication in order to make requests into the REST service
+2) A third-party service is used to get an accountDetails string. The third-party service uses socket communication with TLS1.2, you should be able to establish a connection and send/receive JSON messages. For getting the accountDetails string, you must send a JSON request in the form of {"id":3}, and will receive a JSON response in the form of `{"id":3, accountDetails:"jhf7yf83h92h37d287u2nc9728c9h02897gc230c308g"}`.
 
-2) A simple CRUD(Create Read Update Delete) REST JSON service for accounts under the route "/accounts". The accounts added should be able to login and also add accounts. Important: the accounts must have a unique integer id for getting accountDetails later on in the task.
+### Optional functionality for bonus points:
 
-3) File upload and listing under the route "/files"
+1) File upload and listing under the route "/files".
 
-4) A third-party service is used to get an accountDetails string. The third-party service uses socket communication with TLS1.2, you should be able to establish a connection and send/receive JSON messages. For getting the accountDetails string, you must send a JSON request in the form of {"id":3}, and will receive a JSON response in the form of {"id":3, accountDetails:"jhf7yf83h92h37d287u2nc9728c9h02897gc230c308g"} 
+2) There should be some kind of authentication in order to make requests into the REST service. The accounts added should be able to login and also add accounts.
+
+3) Unit tests
 
 Technical Requirements:
 - All data must be save to a database
